@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Ben Hanson - Front End Developer</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Ben Hanson</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><i class="uil uil-estate nav__icon"></i>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="uil uil-user nav__icon"></i>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><i class="uil uil-file-alt nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link"
+                ><i class="uil uil-briefcase-alt nav__icon"></i>Qualifications &
+                Work Experience</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link"
+                ><i class="uil uil-briefcase-alt nav__icon"></i>Portfolio</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <button class="change-theme" onclick="darkMode()">
+            <i
+              class="uil uil-moon"
+              onclick="iconChange(this)"
+              id="theme-button"
+            ></i>
+          </button>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/ben-hanson-87242937/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/BenHanson747"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    xlink:href="Ben_Hanson.png"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Ben Hanson</h1>
+              <h3 class="home_substitle">Frontend Developer.</h3>
+              <p class="home__description">
+                Passionate and motivated Junior Developer, delivering high
+                quality HTML, CSS and Javascript projects.
+              </p>
+              <a
+                href="mailto:ben.hanson1991@googlemail.com"
+                class="button button--flex"
+                >Contact Me
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My Introduction</span>
+        <div class="about__container container grid">
+          <img src="Ben_Hanson.png" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">blah blah blah</p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">08+</span>
+                <span class="about__info-name">Years<br />experience</span>
+              </div>
+              <div>
+                <span class="about__info-title">20+</span>
+                <span class="about__info-name">Completed<br />projects</span>
+              </div>
+              <div>
+                <span class="about__info-title">05+</span>
+                <span class="about__info-name">Companies<br />worked</span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a
+                download=""
+                href="CV - Ben Hanson.pdf"
+                class="about__button button--flex"
+                >Download CV
+                <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container">
+          <span class="skills__subtitle">Languages & Software learned</span>
+          <div class="image__containerMaster">
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="html 5.png" alt="" />
+            </div>
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="css3.png" alt="" />
+            </div>
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="javascript.png" alt="" />
+            </div>
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="github.png" alt="" />
+            </div>
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="jira.png" alt="" />
+            </div>
+            <div class="skills__imgContainer">
+              <img class="skills__img" src="sql.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualifications & Work Experience</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i
+              >Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>Work
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">BSC Economics</h3>
+                  <span class="qualification__subtitle"
+                    >Swansea University</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2010-2013
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgLeft"
+                      src="Swansea_University_Badge-removebg-preview.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">
+                    Self-Taught Frontend Developer
+                  </h3>
+                  <span class="qualification__subtitle">W3 Schools</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2021- present
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgRight"
+                      src="w3_schools.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qualification__content" data-content id="work">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Portfolio Analyst</h3>
+                  <span class="qualification__subtitle"
+                    >Allianz Insurance Plc</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2013 - 2019
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgLeft"
+                      src="Allianz.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Waitrose & Partners</h3>
+                  <span class="qualification__subtitle">Senior Analyst</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2019 - 2021
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgRight"
+                      src="waitrose.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My personal projects</span>
+
+        <div class="container slideshow-container">
+          <div class="mySlides">
+            <img class="slideshow-image" src="jira.png" style="width: 100%" />
+            <div class="text">Caption Text</div>
+            <div class="portfolio__buttonContainer">
+              <button class="portfolio__demo button button--flex">Demo</button>
+              <button class="portfolio__demo button button--flex">
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img
+              class="slideshow-image"
+              src="javascript.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Two</div>
+            <div class="portfolio__buttonContainer">
+              <button class="portfolio__demo button button--flex">Demo</button>
+              <button class="portfolio__demo button button--flex">
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="mySlides">
+            <img class="slideshow-image" src="css3.png" style="width: 100%" />
+            <div class="text">Caption Three</div>
+            <div class="portfolio__buttonContainer">
+              <button class="portfolio__demo button button--flex">Demo</button>
+              <button class="portfolio__demo button button--flex">
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Ben Hanson.</h1>
+            <span class="footer__subtitle">Frontend Developer.</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#home" class="footer__links">Home</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__links">Portfolio</a>
+            </li>
+            <li>
+              <a
+                href="mailto:ben.hanson1991@googlemail.com"
+                class="footer__links"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/ben-hanson-87242937/"
+              target="_blank"
+              class="footer__socials"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/BenHanson747"
+              target="_blank"
+              class="footer__socials"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Ben Hanson. All rights reserved</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
