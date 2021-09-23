@@ -6,548 +6,460 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
-  />
-    <title>PayPex: Online Wallet for Money Transfers & Payments</title>
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Ben Hanson - Front End Developer</title>
   </head>
   <body>
-    <header>      
-      <div class="header-logo-container">
-        <a href="grid.html">
-          <i class="uil uil-card-atm header-logo-svg"></i>
-          <h1 class="header-logo-content">
-            Pay<span class="header-logo-content-green">Pex</span>
-          </h1>
-        </a>
-      </div>
-      <nav class="header-nav-container" id="myTopnav">
-        <li class="header-nav-item" href="index.html">Home</li>
-
-
-        <li class="header-nav-item-products" >
-          Products
-          <ul class="header-nav-productDropdown-container" >
-            <li class="header-nav-productDropdown-item">International Money Transfer</li>
-            <li class="header-nav-productDropdown-item">Cryptocurrencies</li>
-            <li class="header-nav-productDropdown-item">Recurring Payments</li>
-            <li class="header-nav-productDropdown-item">PayPex Premium</li>
-          </ul>
-          
-          <i class="uil uil-angle-down"></i>
-        </li>
-
-        <li class="header-nav-item" href="#pricing">Pricing</li>
-      
-      </nav>  
-
-  
-
-      <div class="header-buttons-container">
-        <button
-          class="header-button-login"
-          onclick="document.getElementById('login').style.display='block'"
-        >
-          Login
-        </button>
-
-        <div id="login" class="header-modal-container">
-          <form class="modalForm animateModal">
-            <div class="modalContent-closeContainer">
-              <span
-                onclick="document.getElementById('login').style.display='none'"
-                class="modalContent-close"
-                title="close"
-                >&times;
-              </span>
-            </div>
-            <h1 class="modalForm-header">Login</h1>
-            <p class="modalForm-text">Please fill out your details to login to your account.</p>
-
-            <div class="modalContent-container">
-              <label for="email"><b>Email</b></label>
-              <input
-                class="modalContent-inputs"
-                type="email"
-                placeholder="Enter Email"
-                name="email"
-           
-              />
-              <label for="psw"><b>Password</b></label>
-              <input
-                class="modalContent-inputs"
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-  
-              />
-              <button class="modal-button" type="submit">Login</button>
-            </div>
-
-            <div class="modalContent-container">
-              <label>
-                <input type="checkbox" checked="checked" name="remember" />
-                Remember me
-              </label>
-              <span class="login-modal-forgotPassword"
-                > <a href="#"></a>Forgot password?</a></span
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Ben Hanson</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><i class="uil uil-estate nav__icon"></i>Home</a
               >
-            </div>
-
-            <div class="login-modal-signupLink" >
-              <a
-                onclick="document.getElementById('signup').style.display='block'; document.getElementById('login').style.display='none'"
-              >Not a member? Sign-up here</a></div>
-          </form>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="uil uil-user nav__icon"></i>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><i class="uil uil-file-alt nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link"
+                ><i class="uil uil-briefcase-alt nav__icon"></i>Qualifications &
+                Work Experience</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link"
+                ><i class="uil uil-briefcase-alt nav__icon"></i>Portfolio</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
-
-        <button 
-              class="header-button-signup" 
-              onclick="document.getElementById('signup').style.display='block'"
-              >Sign Up
-        </button>
-
-
-
-        <div id="signup" class="header-modal-container">
-          <form class="modalForm animateModal">  
-            <div class="modalContent-closeContainer">
-              <span
-                onclick="document.getElementById('signup').style.display='none'"
-                class="modalContent-close"
-                title="close"
-                >&times;
-              </span>
-            </div>
-            <h1 class="modalForm-header">Sign Up</h1>
-            <p class="modalForm-text">Please fill out this form to create an account.</p>
-          
-
-            <div class="modalContent-container">
-              <label for="email"><b>Email</b></label>
-              <input
-                class="modalContent-inputs"
-                type="email"
-                placeholder="Enter Email"
-                name="email"
-                required
-              />
-              <label for="psw"><b>Password</b></label>
-              <input
-                class="modalContent-inputs"
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-
-              <label for="psw"><b>Repeat Password</b></label>
-              <input
-                class="modalContent-inputs"
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-              <label>
-                <input type="checkbox" checked="checked" name="remember" />
-                Remember me
-              </label>
-
-              <small>By creating an account, you agree to our <a class="signup-privacy-text" href="#" target="_blank">Terms & Privacy</a></small>
-
-              <button class="modal-button" type="submit">Sign up</button>
-            </div></form>
-      </div>   
-    </div>
-       <i class="uil uil-bars" onclick="displayNav()"></i>
-      <nav class="header-nav-responsive" id="responsiveNav">
-        <li class="header-nav-productDropdown-item">Home</li>
-        <li class="header-nav-productDropdown-item">Pricing</li>
-            <li class="header-nav-productDropdown-item">International Money Transfer</li>
-            <li class="header-nav-productDropdown-item">Cryptocurrencies</li>
-            <li class="header-nav-productDropdown-item">Recurring Payments</li>
-            <li class="header-nav-productDropdown-item">PayPex Premium</li>
+        <div class="nav__btns">
+          <button class="change-theme" onclick="darkMode()">
+            <i
+              class="uil uil-moon"
+              onclick="iconChange(this)"
+              id="theme-button"
+            ></i>
+          </button>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
       </nav>
     </header>
-    <section class="main-title">    
-        <div class="main-title-container">
-        <h2>
-          <i class="uil uil-award"> </i> 100%
-          <span class="main-title-guaranteedText">Guaranteed</span>
-        </h2>
-        <h1 class="main-title-heading">
-          Pay<span class="main-title-logo-green">Pex</span> <br />Online
-          Wallet
-        </h1>
-        <button class="main-title-tryForFreeButton">Try for Free!</button>
-      </div>
-  
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/ben-hanson-87242937/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/BenHanson747"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    xlink:href="/Personal Projects/Personal Webiste/Images/Ben_Hanson.png"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Ben Hanson</h1>
+              <h3 class="home_substitle">Frontend Developer.</h3>
+              <p class="home__description">
+                Passionate and motivated Junior Developer, delivering high
+                quality HTML, CSS and Javascript projects.
+              </p>
+              <a
+                href="mailto:ben.hanson1991@googlemail.com"
+                class="button button--flex"
+                >Contact Me
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Main - Graphic -->
-
-    <div class="main-graphic">
-      <img class="main-graphic-image" src="/Personal Projects/MasterPay Landing Page/Images/main-side-graphic.PNG" alt="">
-    </div>
-
-
-    <!-- Main - Features  -->
-
-    <div class="main-features"><h1 class="main-secondContainer-heading">
-      Explore what you can
-      <span class="header-logo-content-green">do...</span>
-    </h1>
-    <div class="main-bestFeatures-container">
-      <div class="main-bestFeatures-subContainer">
-        <i class="uil uil-analytics"></i>
-        <div class="main-bestFeatures-textContainer">
-          <h3>Online Analysis</h3>
-          <p>Every 5 days</p>
-        </div>
-      </div>
-      <div class="main-bestFeatures-subContainer">
-        <i class="uil uil-pound-circle"></i>
-        <div class="main-bestFeatures-textContainer">
-          <h3>Currency Variation</h3>
-          <p>Up to 15 currencies accepted</p>
-        </div>
-      </div>
-      <div class="main-bestFeatures-subContainer">
-        <i class="uil uil-transaction"></i>
-        <div class="main-bestFeatures-textContainer">
-          <h3>Convert Cards</h3>
-          <p>Convert easily within minutes</p>
-        </div>
-      </div>
-    </div></div>
-
-
-
-
-
-    <div class="main-downloadApp"><div class="main-downloadApp-container">
-          <h1>Download the app</h1>
-          <p>
-            Access your money no matter when, no matter where. Our fast and
-            secure app lets you move your balance 24/7, worldwide.
-          </p>
-
-          <svg
-            class="main-downloadApp-icon-google"
-            xmlns="http://www.w3.org/2000/svg"
-            width="2500"
-            height="846"
-            enable-background="new 0 0 1477 500"
-            viewBox="0 0 1477 500"
-          >
-            <g>
-              <path
-                fill="#fff"
-                d="M60 0h1357c33.1 0 60 26.9 60 60v380c0 33.1-26.9 60-60 60H60c-33.1 0-60-26.9-60-60V60C0 26.9 26.9 0 60 0z"
-              />
-              <g transform="translate(60 179)">
-                <linearGradient
-                  id="a"
-                  x1="-70.717"
-                  x2="-70.398"
-                  y1="570.714"
-                  y2="570.201"
-                  gradientTransform="matrix(234.0913 0 0 -256.5288 16609.81 146485.188)"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#ff177b" />
-                  <stop offset="1" stop-color="#ffec73" />
-                </linearGradient>
-                <path
-                  fill="url(#a)"
-                  d="M120.2 61S18.3 4.5 12.3 1.2C6.3-2.1.3-.1.3 6.8v243.5c0 5.2 4.3 7.4 9.5 4.6 5.2-2.9 110.4-61.2 110.4-61.2s14.3-7.9 21.4-11.9c11.5-6.4 34.5-19.1 34.5-19.1s47.5-26.3 53.8-29.8c6.3-3.5 5.7-8.3.4-11-5.3-2.7-54.1-30-54.1-30l-56-30.9z"
-                />
-                <linearGradient
-                  id="b"
-                  x1="-70.261"
-                  x2="-70.632"
-                  y1="571.394"
-                  y2="569.943"
-                  gradientTransform="matrix(139 0 0 -256 9858 146183)"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stop-color="#064aa2" />
-                  <stop offset="1" stop-color="#63ffd4" />
-                </linearGradient>
-                <path
-                  fill="url(#b)"
-                  d="M139 127L5 0C1.9.7 0 3.1 0 7v243c0 3.3 1.3 5.3 3 6l136-129z"
-                />
-                <defs>
-                  <filter
-                    id="c"
-                    width="234"
-                    height="257"
-                    x="0"
-                    y=".1"
-                    filterUnits="userSpaceOnUse"
-                  >
-                    <feColorMatrix
-                      values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
-                    />
-                  </filter>
-                </defs>
-                <mask
-                  id="d"
-                  width="234"
-                  height="257"
-                  x="0"
-                  y=".1"
-                  maskUnits="userSpaceOnUse"
-                >
-                  <g filter="url(#c)">
-                    <path
-                      fill="#fff"
-                      d="M139 127L5 0C1.9.7 0 3.1 0 7v243c0 3.3 1.3 5.3 3 6l136-129z"
-                    />
-                  </g>
-                </mask>
-                <path
-                  fill="none"
-                  d="M176 92l-56-31c-.2.5-102.1-56.1-108-59C6-1.8 0 .3 0 7v244c0 5.4 4.3 7.6 9 5 5.7-3.2 110.8-61.5 111-62l56-31c-.3.4 47.1-25.9 53-29 6.8-3.9 6.1-8.7 1-11-5.5-3.2-54.3-30.5-54-31"
-                  mask="url(#d)"
-                />
-                <g transform="translate(2.983 127.504)">
-                  <defs>
-                    <filter
-                      id="e"
-                      width="234"
-                      height="257"
-                      x="-3"
-                      y="-127.4"
-                      filterUnits="userSpaceOnUse"
-                    >
-                      <feColorMatrix
-                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
-                      />
-                    </filter>
-                  </defs>
-                  <mask
-                    id="g"
-                    width="234"
-                    height="257"
-                    x="-3"
-                    y="-127.4"
-                    maskUnits="userSpaceOnUse"
-                  >
-                    <g filter="url(#e)">
-                      <path
-                        fill="#fff"
-                        d="M5.5 127.8L83 85.2c19.1-10.6 34.2-19 34.2-19l56.3-30.3L136-.5 0 128.5c1.5.5 4.2.2 6.3-.8"
-                      />
-                    </g>
-                  </mask>
-                  <linearGradient
-                    id="f"
-                    x1="-73.347"
-                    x2="-74.108"
-                    y1="443.327"
-                    y2="442.827"
-                    gradientTransform="matrix(233.965 0 0 -256.9642 17295.543 113843.219)"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#ff4521" />
-                    <stop offset="1" stop-color="#8a33db" />
-                  </linearGradient>
-                  <path
-                    fill="url(#f)"
-                    d="M117-66.5c-.2.5-102.1-56.1-108-59-6-3.8-12-1.7-12 5v244c0 5.4 4.3 7.6 9 5 5.7-3.2 110.8-61.5 111-62l56-31c-.3.4 47.1-25.9 53-29 6.8-3.9 6.1-8.7 1-11-5.5-3.2-54.3-30.5-54-31l-56-31z"
-                    mask="url(#g)"
-                  />
-                </g>
-                <g transform="translate(4.98)">
-                  <linearGradient
-                    id="h"
-                    x1="-75.767"
-                    x2="-75.125"
-                    y1="570.364"
-                    y2="569.122"
-                    gradientTransform="matrix(171.2139 0 0 -127.4293 12997.62 72640.227)"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#00a3b5" />
-                    <stop offset="1" stop-color="#d6ffa1" />
-                  </linearGradient>
-                  <path
-                    fill="url(#h)"
-                    d="M7.1 1.1C4.5-.2 2-.6-.1-.1L134 127.1 171.1 92l-55.9-31S62.5 31.8 30.7 14.2L7.1 1.1z"
-                  />
-                  <defs>
-                    <filter
-                      id="i"
-                      width="234"
-                      height="257"
-                      x="-5"
-                      y=".1"
-                      filterUnits="userSpaceOnUse"
-                    >
-                      <feColorMatrix
-                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
-                      />
-                    </filter>
-                  </defs>
-                  <mask
-                    id="j"
-                    width="234"
-                    height="257"
-                    x="-5"
-                    y=".1"
-                    maskUnits="userSpaceOnUse"
-                  >
-                    <g filter="url(#i)">
-                      <path
-                        fill="#fff"
-                        d="M7.1 1.1C4.5-.2 2-.6-.1-.1L134 127.1 171.1 92l-55.9-31S62.5 31.8 30.7 14.2L7.1 1.1z"
-                      />
-                    </g>
-                  </mask>
-                  <path
-                    fill="none"
-                    d="M171 92l-56-31c-.2.5-102-56.1-108-59C1-1.8-5 .3-5 7v244c0 5.4 4.3 7.6 9 5 5.7-3.2 110.8-61.5 111-62l56-31c-.3.4 47.1-25.9 53-29 6.8-3.9 6.1-8.7 1-11-5.5-3.2-54.3-30.5-54-31"
-                    mask="url(#j)"
-                  />
-                </g>
-              </g>
-              <g transform="translate(347 201)">
-                <path
-                  d="M664.6 147.9l-11.1 10.5c-2.6 1.4-5.1 3.1-7.6 4.2-7.7 3.5-15.5 4.4-22.5 4.4-7.4 0-19-.5-30.8-9.1-16.4-11.6-23.6-31.7-23.6-49.1 0-36.1 29.2-53.8 53.1-53.8 8.3 0 16.9 2.1 23.8 6.5 11.6 7.7 14.6 17.7 16.2 23.1l-54.4 22.1-17.8 1.4c5.8 29.6 25.7 46.8 47.7 46.8 11 0 19.1-3.6 26.6-7.3 0 0 1.5-.8.4.3zm-33.2-59.4c4.4-1.6 6.6-3 6.6-6.3 0-9.4-10.3-20.2-22.7-20.2-9.1 0-26.3 7.3-26.3 32.6 0 4 .5 8.2.7 12.4l41.7-18.5z"
-                />
-                <path
-                  d="M551 146.6c0 9 1.6 10.4 9.2 11.1 4 .5 7.9.7 11.8 1.1l-8.5 5.1h-40.7c5.3-7 6.3-7.7 6.3-12.3v-5.2l-.1-138h-18L528.3 0h33c-7.2 4.2-9.3 6.7-10.2 14.8l-.1 131.8"
-                />
-                <path
-                  d="M487.9 66.4c5.3 4.4 16.3 13.7 16.3 31.3 0 17.2-9.6 25.3-19.3 33-3 3-6.5 6.3-6.5 11.4 0 5.1 3.5 7.9 6 10l8.3 6.5c10.1 8.6 19.3 16.5 19.3 32.5 0 21.8-21 43.9-60.6 43.9-33.4 0-49.5-16-49.5-33.2 0-8.4 4.1-20.2 17.8-28.3 14.3-8.8 33.6-10 44-10.7-3.2-4.2-6.9-8.6-6.9-15.8 0-3.9 1.2-6.3 2.3-9.1-2.5.2-5.1.5-7.4.5-24.4 0-38.2-18.4-38.2-36.5 0-10.7 4.8-22.5 14.8-31.1C441.4 59.9 457.1 58 469.5 58H517l-14.8 8.4h-14.3zm-16.2 102.9c-1.9-.3-3-.3-5.3-.3-2.1 0-14.7.5-24.4 3.8-5.1 1.9-20 7.6-20 24.4 0 16.8 16 28.9 40.9 28.9 22.3 0 34.1-10.9 34.1-25.5 0-12.2-7.7-18.6-25.3-31.3zm6.5-44.8c5.3-5.3 5.8-12.7 5.8-16.9 0-16.7-9.8-42.6-28.9-42.6-5.9 0-12.4 3-16.1 7.7-3.9 4.8-5 11.1-5 17.1 0 15.5 9 41.2 28.7 41.2 5.7 0 11.9-2.8 15.5-6.5zM344.3 167c-36.7 0-56.3-29-56.3-55.2 0-30.6 24.7-56.8 59.8-56.8 33.9 0 55.2 26.9 55.2 55.2 0 27.6-21 56.8-58.7 56.8zm28.7-18.9c5.6-7.5 7-16.9 7-26 0-20.7-9.7-60.1-38.5-60.1-7.6 0-15.3 3-20.9 8-9 8.2-10.7 18.5-10.7 28.6 0 23.2 11.3 61.4 39.4 61.4 9.2 0 18.4-4.4 23.7-11.9zM221.3 167c-36.7 0-56.3-29-56.3-55.2 0-30.6 24.7-56.8 59.8-56.8 33.9 0 55.2 26.9 55.2 55.2 0 27.6-21 56.8-58.7 56.8zm28.7-18.9c5.6-7.5 7-16.9 7-26 0-20.7-9.8-60.1-38.5-60.1-7.7 0-15.3 3-20.9 8-9.1 8.2-10.7 18.5-10.7 28.6 0 23.2 11.4 61.4 39.4 61.4 9.2 0 18.4-4.4 23.7-11.9zM149.8 160.1l-31.1 7.2c-12.6 2-23.9 3.8-35.9 3.8C22.8 171 0 126.6 0 91.8 0 49.4 32.4 10 87.8 10c11.7 0 23 1.7 33.3 4.6 16.3 4.6 23.9 10.3 28.7 13.6l-18.1 17.3-7.6 1.7 5.4-8.7c-7.4-7.2-20.9-20.6-46.5-20.6-34.3 0-60.2 26.2-60.2 64.5 0 41.1 29.5 79.8 76.9 79.8 13.9 0 21.1-2.8 27.6-5.4v-35.3l-32.8 1.8 17.4-9.4H158l-5.6 5.5c-1.5 1.3-1.7 1.7-2.2 3.5-.2 2-.4 8.3-.4 10.6v26.6M731.7 148.9V208H720V57.7h11.7v17.1c7.6-11.1 21.6-19.8 37.7-19.8 29 0 48.6 22.1 48.6 57 0 34.7-19.5 57.2-48.6 57.2-15.2 0-28.9-7.9-37.7-20.3zm74.3-36c0-26.6-13.7-46.9-38.1-46.9-15.1 0-29.6 12-35.9 22.5v48.6c6.3 10.5 20.8 22.9 35.9 22.9 24.4 0 38.1-20.5 38.1-47.1zM834 16h12v151h-12V16zM976.5 197.6c2.5 1.1 6.8 1.8 9.5 1.8 7.2 0 12.1-2.9 16.6-13.3l8.5-19.4L965 57h13.1l39.5 95.1 39.2-95.1h13.2l-56.2 132.7c-5.8 13.7-15 20.3-27.6 20.3-3.8 0-8.8-.7-11.7-1.6l2-10.8M943.4 166.9c-.8-3.8-1.4-7.1-1.8-9.9-.4-2.8-.6-5.6-.6-8.5-4 5.9-9.7 10.9-17.1 14.8-7.3 3.9-14.3 5.8-23.8 5.8-11.5 0-20.4-2.8-26.7-8.6-6.3-5.7-9.5-13.5-9.5-23.3s4.6-17.8 13.8-23.9c9.2-6.1 21.1-9.2 35.8-9.2h27.4V90.5c0-7.8-2.7-14-8-18.4-5.3-4.5-12.8-6.7-22.5-6.7-8.9 0-16.1 2.1-21.6 6.1-5.4 4.1-8.2 9.2-8.2 15.3h-12l-.2-.6c-.4-8.3 3.3-15.5 11.4-21.8 8-6.3 18.4-9.4 31.3-9.4 12.8 0 23.2 3.1 31 9.3 7.8 6.1 11.7 15 11.7 26.5v54c0 3.9.2 7.6.7 11.3.5 3.7 1.3 7.3 2.3 10.8h-13.4zm-41.8-7.9c10 0 17.2-2.3 24.5-6.7 7.3-4.4 12.2-10.2 14.8-17.2V114h-27.6c-10.5 0-19.2 2.3-26.1 7.1-6.9 4.7-10.3 10.4-10.3 17.1 0 6.3 2.2 11.3 6.6 15.1 4.5 3.8 10.5 5.7 18.1 5.7z"
-                />
-              </g>
-              <g transform="translate(343 79)">
-                <path
-                  d="M0 36.3C0 14.8 17.2.9 38.6.9c14.3 0 23.7 6.4 29.6 14.2l-10.5 5.6c-4-5.1-10.9-9.1-19.1-9.1-14.5 0-25.4 10.3-25.4 24.7C13.3 50.6 24.1 61 38.6 61c7.5 0 14.1-3.2 17.4-6.2V44.3H34V33.7h34.8v25.5c-7.2 7.5-17.5 12.5-30.2 12.5C17.2 71.8 0 57.8 0 36.3M85.5 70.8V2h51.1v10.6h-38v17.7h37.2V41H98.6v19.2h38v10.6H85.5M171.3 70.8V12.6h-22.2V2h57.3v10.6h-22.2v58.2h-12.9M252.3 2h12.5v68.8h-12.5V2zM300.6 70.8V12.6h-22.2V2h57.3v10.6h-22.2v58.2h-12.9M378.5 36.4C378.5 16 394.2 1 416.6 1c22.2 0 38 15 38 35.4s-15.9 35.4-38 35.4c-22.4 0-38.1-15-38.1-35.4zm62.5-.6c0-14-9.6-24.5-24.5-24.5-15 0-24.5 10.5-24.5 24.5 0 13.9 9.5 24.5 24.5 24.5 14.9 0 24.5-10.5 24.5-24.5zM520.3 70.8L482 21.6v49.2h-12.9V2h13.2l37.5 47.7V2h12.9v68.8h-12.4"
-                />
-              </g>
-            </g>
-          </svg>
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My Introduction</span>
+        <div class="about__container container grid">
           <img
-            class="main-downloadApp-picture"
-            src="/Personal Projects/MasterPay Landing Page/Images/holding_phone.png"
+            src="/Personal Projects/Personal Webiste/Images/Ben_Hanson.png"
             alt=""
+            class="about__img"
           />
-        </div></div>
-    <div class="main-trustpilot"><h2>
-      What our customers
-      <span class="header-logo-content-green">think...</span>
-    </h2>
-    <div class="main-trustPilot-container">
-      <div class="main-trustPilot-item">
-        <div class="main-trustPilot-ratings">
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
+          <div class="about__data">
+            <p class="about__description">
+              Highly driven, self-taught, Frontend Developer with proficient
+              knowledge in HTML5, CSS3, Javascript (ES6) and SQL. I have over
+              seven years in various Data Analytics roles with exposure to SQL,
+              R and Python languages, but with my passion for coding, I am
+              looking for an opportunity to switch into a Frontend Developer
+              role.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">07+</span>
+                <span class="about__info-name">Years<br />experience</span>
+              </div>
+              <div>
+                <span class="about__info-title">02+</span>
+                <span class="about__info-name">Completed<br />projects</span>
+              </div>
+              <div>
+                <span class="about__info-title">02+</span>
+                <span class="about__info-name">Companies<br />worked</span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a
+                download=""
+                href="/Personal Projects/Personal Webiste/Resume/Resume.pdf"
+                class="about__button button--flex"
+                >Download CV
+                <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h3>Great App!</h3>
-        <time datetime="2021-07-12">12 July </time>
-        <p class="main-trustPilot-text">Great app thank you PayPex</p>
-        <p class="main-trustPilot-name">Lina Jung</p>
-      </div>
-      <div class="main-trustPilot-item">
-        <div class="main-trustPilot-ratings">
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-        </div>
-        <h3>Fantastic Experience!</h3>
-        <time datetime="2021-07-12">11 July </time>
-        <p class="main-trustPilot-text">
-          Love PayPex. Loyal, fast & secure
-        </p>
-        <p class="main-trustPilot-name">Titijan Ajani</p>
-      </div>
-      <div class="main-trustPilot-item">
-        <div class="main-trustPilot-ratings">
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-        </div>
-        <h3>Thanks PayPex</h3>
-        <time datetime="2021-07-12">9 July </time>
-        <p class="main-trustPilot-text">Low cost and fast!</p>
-        <p class="main-trustPilot-name">Myles Burco</p>
-      </div>
-      <div class="main-trustPilot-item">
-        <div class="main-trustPilot-ratings">
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-          <span><i class="uis uis-star"></i></span>
-        </div>
-        <h3>Very Convenient!</h3>
-        <time datetime="2021-07-12">12 July </time>
-        <p class="main-trustPilot-text">
-          Very reliable and convenient to use. Great service
-        </p>
-        <p class="main-trustPilot-name">Eric</p>
-      </div>
-    </div>
-    <small class="main-trustPilot-smallText">
-      Rated 4.8 / 5.0 based on 18,164 reviews. Showing our favourite
-      reviews.
-    </small></div>
+      </section>
 
-    <div class="main-paymentsProvider">        <h2 class="main-mainPartners-heading">
-      Official payments <span class="header-logo-content-green">provider:</span>
-    </h2>
-      <section class="main-mainPartners-container">
-      <div class="main-mainPartners-imgContainer">
-      <img
-        class="main-mainPartners-img"
-        src="/Personal Projects/MasterPay Landing Page/Images/companyLogo1.png"
-        alt="Company Logo 1"
-      /></div>
-      <div class="main-mainPartners-imgContainer">
-      <img
-        class="main-mainPartners-img"
-        src="/Personal Projects/MasterPay Landing Page/Images/companyLogo2.png"
-        alt="Company Logo 2"
-      /></div>
-      <div class="main-mainPartners-imgContainer">
-      <img
-        class="main-mainPartners-img"
-        src="/Personal Projects/MasterPay Landing Page/Images/companyLogo3.png"
-        alt="Company Logo 3"
-      /></div>
-    </section>
-</div>
-    <footer>     
-       <h1>
-      PayPex <br />
-      Online Wallet for Money Transfers & Payments
-    </h1>
-    <div class="footer-socialMedia-icons">
-      <i class="uil uil-twitter"></i>
-      <i class="uil uil-facebook"></i>
-      <i class="uil uil-instagram-alt"></i>
-    </div>
-    <div class="footer-copyrightText">
-      &#169; Ben Hanson. All rights reserved
-    </div>
-  </footer>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container">
+          <span class="skills__subtitle">Languages & Software learned</span>
+          <div class="image__containerMaster">
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/html 5.png"
+                alt=""
+              />
+            </div>
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/css3.png"
+                alt=""
+              />
+            </div>
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/javascript.png"
+                alt=""
+              />
+            </div>
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/github.png"
+                alt=""
+              />
+            </div>
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/jira.png"
+                alt=""
+              />
+            </div>
+            <div class="skills__imgContainer">
+              <img
+                class="skills__img"
+                src="/Personal Projects/Personal Webiste/Images/sql.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualifications & Work Experience</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i
+              >Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>Work
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">BSC Economics</h3>
+                  <span class="qualification__subtitle"
+                    >Swansea University</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2010-2013
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgLeft"
+                      src="/Personal Projects/Personal Webiste/Images/Swansea_University_Badge-removebg-preview.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">
+                    Self-Taught Frontend Developer
+                  </h3>
+                  <span class="qualification__subtitle">W3 Schools</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2021- present
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgRight"
+                      src="/Personal Projects/Personal Webiste/Images/w3_schools.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qualification__content" data-content id="work">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Portfolio Analyst</h3>
+                  <span class="qualification__subtitle"
+                    >Allianz Insurance Plc</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2013 - 2019
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgLeft"
+                      src="/Personal Projects/Personal Webiste/Images/Allianz.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Waitrose & Partners</h3>
+                  <span class="qualification__subtitle">Senior Analyst</span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>2019 - 2021
+                  </div>
+                  <div>
+                    <img
+                      class="qualification__img qualification__imgRight"
+                      src="/Personal Projects/Personal Webiste/Images/waitrose.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My personal projects</span>
+
+        <!-- Project Container 1 -->
+
+        <div class="container slideshow-container">
+          <div class="mySlides">
+            <img
+              class="slideshow-image"
+              src="/Personal Projects/Personal Webiste/Images/MasterPay Landing Page Thumbnail.PNG"
+              style="width: 100%"
+            />
+            <div class="text">PayPex: Online Wallet Landing Page</div>
+            <div class="portfolio__buttonContainer">
+              <a
+                href="/Personal Projects/MasterPay Landing Page/Code/index.html"
+                target="_blank"
+                ><button class="portfolio__demo button button--flex">
+                  Demo
+                </button></a
+              >
+              <a
+                href="https://github.com/BenHanson747/paypex__landingPage"
+                target="_blank"
+                ><button class="portfolio__demo button button--flex">
+                  GitHub
+                </button></a
+              >
+            </div>
+          </div>
+
+          <!-- Project Container 2 -->
+          <!-- 
+          <div class="mySlides">
+            <img
+              class="slideshow-image"
+              src="javascript.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Two</div>
+            <div class="portfolio__buttonContainer">
+              <button class="portfolio__demo button button--flex">Demo</button>
+              <button class="portfolio__demo button button--flex">
+                GitHub
+              </button>
+            </div>
+          </div> -->
+
+          <!-- Project Container 3 -->
+
+          <!-- <div class="mySlides">
+            <img class="slideshow-image" src="css3.png" style="width: 100%" />
+            <div class="text">Caption Three</div>
+            <div class="portfolio__buttonContainer">
+              <button class="portfolio__demo button button--flex">Demo</button>
+              <button class="portfolio__demo button button--flex">
+                GitHub
+              </button>
+            </div>
+          </div> -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <!-- <span class="dot" onclick="currentSlide(2)"></span> -->
+          <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Ben Hanson.</h1>
+            <span class="footer__subtitle">Frontend Developer.</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#home" class="footer__links">Home</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__links">Portfolio</a>
+            </li>
+            <li>
+              <a
+                href="mailto:ben.hanson1991@googlemail.com"
+                class="footer__links"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/ben-hanson-87242937/"
+              target="_blank"
+              class="footer__socials"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/BenHanson747"
+              target="_blank"
+              class="footer__socials"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Ben Hanson. All rights reserved</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
-
