@@ -380,7 +380,6 @@ button {
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
-  margin: 0.5rem;
 }
 
 .about__info {
@@ -953,7 +952,8 @@ body.dark-theme {
 .slideshow-image {
   width: 10rem;
   height: 20rem;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .portfolio__buttonContainer {
