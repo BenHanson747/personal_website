@@ -95,22 +95,34 @@ function iconChange(x) {
         dots[slideIndex-1].className += " active";
       }
 
-// var slideIndex = 0;
-// showSlides();
+   /******* Scroll Reveal Animation *******/
 
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-//   setTimeout(showSlides, 4000); // Change image every 4 seconds
-// }
+   const sr = ScrollReveal({
+           distance: '60px',
+           duration: 2500,
+           delay: 100,
+           reset: true
+   })
+
+   /* bottom to up */
+   sr.reveal('.section__title, .section__subtitle');
+
+// Home
+
+   sr.reveal('header, .home__title, .home_substitle, .home__description, .footer__title, .footer__subtitle',{origin: 'top'});
+   sr.reveal('.uil-linkedin-alt', {origin: 'right', delay:'700'});
+   sr.reveal( '.uil-github-alt', {origin: 'right', delay:'1000'});
+   sr.reveal( '.uil-message', {origin: 'bottom', delay:'1100'});
+   sr.reveal( '.button', {origin: 'bottom', delay:'800'});
+   sr.reveal('.home__description',{origin: 'left', delay:'300'});
+   sr.reveal('.home__img',{origin: 'bottom', delay:'500'});
+
+   // About
+
+   sr.reveal('.about__img, .about__buttons',{origin: 'bottom', delay:'400'});
+   sr.reveal('.about__description, .about__info, .footer__links', {origin: 'top', interval:300});
+
+   // Skills
+
+   sr.reveal('.skills__img, .qualification__button',{origin: 'bottom', interval:200});
+
