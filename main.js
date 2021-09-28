@@ -113,7 +113,6 @@ function iconChange(x) {
    sr.reveal('.uil-linkedin-alt', {origin: 'right', delay:'700'});
    sr.reveal( '.uil-github-alt', {origin: 'right', delay:'1000'});
    sr.reveal( '.uil-message', {origin: 'bottom', delay:'1100'});
-   sr.reveal( '.button', {origin: 'bottom', delay:'800'});
    sr.reveal('.home__description',{origin: 'left', delay:'300'});
    sr.reveal('.home__img',{origin: 'bottom', delay:'500'});
 
