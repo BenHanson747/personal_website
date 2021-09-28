@@ -952,7 +952,7 @@ body.dark-theme {
 }
 
 .slideshow-image {
-  width: 10rem;
+  width: 100%;
   height: 20rem;
   object-fit: cover;
   border-radius: 25px;
