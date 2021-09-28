@@ -109,7 +109,7 @@ function iconChange(x) {
 
 // Home
 
-   sr.reveal('header, .home__title, .home_substitle, .home__description, .footer__title, .footer__subtitle',{origin: 'top'});
+   sr.reveal('.home__title, .home_substitle, .home__description, .footer__title, .footer__subtitle',{origin: 'top'});
    sr.reveal('.uil-linkedin-alt', {origin: 'right', delay:'700'});
    sr.reveal( '.uil-github-alt', {origin: 'right', delay:'1000'});
    sr.reveal( '.uil-message', {origin: 'bottom', delay:'1100'});
