@@ -97,31 +97,31 @@ function iconChange(x) {
 
    /******* Scroll Reveal Animation *******/
 
-//    const sr = ScrollReveal({
-//            distance: '60px',
-//            duration: 1500,
-//            delay: 100,
-//            reset: true
-//    })
+   const sr = ScrollReveal({
+           distance: '60px',
+           duration: 1000,
+           delay: 100,
+           reset: true
+   })
 
-//    /* bottom to up */
-//    sr.reveal('.section__title, .section__subtitle');
+   /* bottom to up */
+   sr.reveal('.section__title, .section__subtitle');
 
-// // Home
+// Home
 
-//    sr.reveal('.home__title, .home_substitle, .home__description, .footer__title, .footer__subtitle',{origin: 'top'});
-//    sr.reveal('.uil-linkedin-alt', {origin: 'right', delay:'700'});
-//    sr.reveal( '.uil-github-alt', {origin: 'right', delay:'1000'});
-//    sr.reveal( '.uil-message', {origin: 'bottom', delay:'1100'});
-//    sr.reveal('.home__description',{origin: 'left', delay:'300'});
-//    sr.reveal('.home__img',{origin: 'bottom', delay:'500'});
+   sr.reveal('.home__title, .home_substitle, .home__description, .footer__title, .footer__subtitle',{origin: 'top'});
+   sr.reveal('.uil-linkedin-alt', {origin: 'right', delay:'700'});
+   sr.reveal( '.uil-github-alt', {origin: 'right', delay:'1000'});
+   sr.reveal( '.uil-message', {origin: 'bottom', delay:'1100'});
+   sr.reveal('.home__description',{origin: 'left', delay:'300'});
+   sr.reveal('.home__img',{origin: 'bottom', delay:'500'});
 
-//    // About
+   // About
 
-//    sr.reveal('.about__img, .about__buttons',{origin: 'bottom', delay:'400'});
-//    sr.reveal('.about__description, .about__info, .footer__links', {origin: 'top', interval:300});
+   sr.reveal('.about__img, .about__buttons',{origin: 'bottom', delay:'400'});
+   sr.reveal('.about__description, .about__info, .footer__links', {origin: 'top', interval:300});
 
-//    // Skills
+   // Skills
 
-//    sr.reveal('.skills__img, .qualification__button',{origin: 'bottom', interval:200});
+   sr.reveal('.skills__img, .qualification__button',{origin: 'bottom', interval:200});
 
