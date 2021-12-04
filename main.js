@@ -99,7 +99,7 @@ function iconChange(x) {
 
    const sr = ScrollReveal({
            distance: '60px',
-           duration: 2500,
+           duration: 1500,
            delay: 100,
            reset: true
    })
