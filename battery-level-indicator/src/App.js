@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <section className="battery">
+            <div className="battery__card">
+                <div className="battery__data">
+                    <p className="battery__text">Battery</p>
+                    <h1 className="battery__percentage">
+                        20%
+                    </h1>
+
+                    <p className="battery__status">
+                        Low battery <i className="ri-plug-line"></i>
+                    </p>
+                </div>
+
+                <div className="battery__pill">
+                    <div className="battery__level">
+                        <div className="battery__liquid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
   );
 }
 
