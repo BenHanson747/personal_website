@@ -1,11 +1,10 @@
-import {useBattery} from 'react-use';
+import { useBattery } from "react-use";
 
-function BatteryPercentage () {
+function BatteryPercentage() {
+  const { level } = useBattery();
+  const BatteryLevel = Math.floor(level * 100) + "%";
 
-    const {level} = useBattery();
-    const BatteryLevel = Math.floor(level * 100) + '%';
-
-    return (<h1 className="battery__percentage">{BatteryLevel}</h1>)
+  return <h1 className="battery__percentage">{BatteryLevel}</h1>;
 }
 
 export default BatteryPercentage;

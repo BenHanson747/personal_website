@@ -1,11 +1,38 @@
-import {useBattery} from 'react-use';
+import { useBattery } from "react-use";
 
-function BatteryLiquid () {
+function BatteryLiquid() {
+  const { level } = useBattery();
+  const BatteryLiquidHeight = { height: `${parseInt(level * 100)}%` };
 
-    const {level} = useBattery();
-    const BatteryLiquidStyle = {height:`${parseInt(level * 100)}%`};
-
-    return (<div style={BatteryLiquidStyle} className="battery__liquid"></div>)
+  if (level <= 0.2) {
+    return (
+      <div
+        style={BatteryLiquidHeight}
+        className="battery__liquid gradient-color-red"
+      ></div>
+    );
+  } else if (level <= 0.4) {
+    return (
+      <div
+        style={BatteryLiquidHeight}
+        className="battery__liquid gradient-color-orange"
+      ></div>
+    );
+  } else if (level <= 0.8) {
+    return (
+      <div
+        style={BatteryLiquidHeight}
+        className="battery__liquid gradient-color-yellow"
+      ></div>
+    );
+  } else {
+    return (
+      <div
+        style={BatteryLiquidHeight}
+        className="battery__liquid gradient-color-green"
+      ></div>
+    );
+  }
 }
 
 export default BatteryLiquid;

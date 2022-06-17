@@ -1,17 +1,15 @@
-import {useBattery} from 'react-use';
+import { useBattery } from "react-use";
 
 function NotSupported() {
+  const { isSupported } = useBattery();
 
-    const {isSupported} = useBattery();
-
-    if (!isSupported) {
-
-    return(    
-        <div>
-             The Battery Level Indicator is not currently supported in this browser.
-       </div>
-       )
-    };
-};
+  if (!isSupported) {
+    return (
+      <div>
+        The Battery Level Indicator is not currently supported in this browser.
+      </div>
+    );
+  }
+}
 
 export default NotSupported;
