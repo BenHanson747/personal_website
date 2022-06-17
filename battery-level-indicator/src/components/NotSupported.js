@@ -5,9 +5,9 @@ function NotSupported() {
 
   if (!isSupported) {
     return (
-      <div>
+      <p>
         The Battery Level Indicator is not currently supported in this browser.
-      </div>
+      </p>
     );
   }
 }

@@ -4,7 +4,7 @@ function FetchingData() {
   const { fetched } = useBattery();
 
   if (!fetched) {
-    return <div>One moment... we are fetching the data we need.</div>;
+    return <p>One moment... we are fetching the data we need.</p>;
   }
 }
 
