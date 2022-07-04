@@ -1,6 +1,6 @@
 import PortfolioData from "./PortfolioData";
 
-function ItemCard() {
+function ItemCardPortfolio() {
   return (
     <>
       {PortfolioData.map((PortfolioData) => {
@@ -26,4 +26,4 @@ function ItemCard() {
   );
 }
 
-export default ItemCard;
+export default ItemCardPortfolio;

@@ -1,12 +1,12 @@
-import ItemCard from "./ItemCard";
+import ItemCardPortfolio from "./ItemCardPortfolio";
 
 function Portfolio() {
   return (
-    <section className="section">
+    <section className="section" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">My recent work</span>
       <div className="flexbox-container">
-        <ItemCard />
+        <ItemCardPortfolio />
       </div>
     </section>
   );

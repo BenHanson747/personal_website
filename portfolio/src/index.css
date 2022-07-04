@@ -106,7 +106,6 @@ button {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
 }
 
 .section__title,
@@ -167,8 +166,9 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
+  padding: 3rem;
 }
 
 .flexbox__item {
@@ -178,6 +178,7 @@ button {
 
 .item__image {
   max-width: 350px;
+  max-height: 200px;
 }
 
 .item__heading {
@@ -188,8 +189,9 @@ button {
   color: var(--text-color);
 }
 
-.item__image:hover {
-  opacity: 0.5;
+.item__heading:hover,
+.item__text:hover {
+  color: var(--first-color);
   transition: 0.5s;
 }
 

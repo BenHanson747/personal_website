@@ -1,6 +1,7 @@
 import NavMenu from "./components/NavMenu";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavMenu />
       <Home />
       <Portfolio />
+      <Clients />
     </>
   );
 }
