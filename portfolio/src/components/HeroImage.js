@@ -1,3 +1,5 @@
+// import image from "./assets/Ben_Hanson.png";
+
 function HeroImage() {
   return (
     <div className="home__img">
@@ -26,7 +28,7 @@ function HeroImage() {
             className="home__blob-img"
             x="12"
             y="18"
-            xlinkHref="/Ben_Hanson.png"
+            xlinkHref={"./assets/Ben_Hanson.png"}
           />
         </g>
       </svg>
