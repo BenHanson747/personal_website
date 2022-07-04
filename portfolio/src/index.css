@@ -173,6 +173,7 @@ button {
 
 .flexbox__item {
   padding: 1rem;
+  position: relative;
 }
 
 .item__image {

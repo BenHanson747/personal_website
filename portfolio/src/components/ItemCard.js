@@ -7,7 +7,7 @@ function ItemCard() {
         const { id, src, alt, linksource, heading, text } = PortfolioData;
         return (
           <div key={id} className="flexbox__item">
-            <a href={linksource}>
+            <a href={linksource} target="_blank" rel="noreferrer">
               <img
                 className="item__image"
                 src={src}
