@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://unicons.iconscout.com/release/v4.0.0/css/line.css");
 
 :root {
   --header-height: 3rem;
@@ -165,34 +164,52 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 1rem;
+  gap: 2rem;
 }
 
 .flexbox__item {
-  padding: 1rem;
   position: relative;
+  max-width: 350px;
+  border-radius: 2rem;
+  box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.item-text-box > h3 {
+  padding: 1rem 0;
 }
 
 .item__image {
   max-width: 350px;
   max-height: 200px;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.item__image:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 .item__heading {
   text-align: left;
-}
-
-.item__text {
-  color: var(--text-color);
+  padding: 1rem 0;
 }
 
 .item__heading:hover,
 .item__text:hover {
   color: var(--first-color);
   transition: 0.5s;
+}
+
+.item-text-box {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.footer__social-icon {
+  width: 25px;
+  height: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -227,10 +244,10 @@ button {
   color: var(--first-color);
 }
 
-/* .nav__icon {
-    height: 19.2px;
-    width: 19.2px;
-} */
+.nav__icon {
+  height: 25px;
+  width: 25px;
+}
 
 .nav__close {
   position: absolute;
@@ -410,6 +427,7 @@ button {
 .footer__links,
 .footer__socials {
   color: #fff;
+  display: flex;
 }
 
 /* .active-link {

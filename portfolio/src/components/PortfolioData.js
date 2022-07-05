@@ -5,7 +5,7 @@ const PortfolioData = [
     alt: "go to Digital Clock",
     linksource: "/responsive-clock/index.html",
     heading: "Digital Clock",
-    text: "Built using React.js",
+    text: "Built using React.js & CSS3",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const PortfolioData = [
     alt: "go to Battery Level Indicator",
     linksource: "/responsive-clock/index.html",
     heading: "Battery Level Indicator",
-    text: "Built using React.js",
+    text: "Built using React.js & CSS3",
   },
 ];
 

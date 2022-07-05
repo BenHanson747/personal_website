@@ -16,9 +16,11 @@ function ItemCardPortfolio() {
                 height="200"
                 loading="lazy"
               />
-              <h3 className="item__heading">{heading}</h3>
-              <p className="item__text">{text}</p>
             </a>
+            <div className="item-text-box">
+              <h3>{heading}</h3>
+              <p>{text}</p>
+            </div>
           </div>
         );
       })}
