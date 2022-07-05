@@ -11,7 +11,7 @@ const PortfolioData = [
     id: 2,
     src: "./assets/battery-indicator-new.PNG",
     alt: "go to Battery Level Indicator",
-    linksource: "/responsive-clock/index.html",
+    linksource: "/battery-level-indicator/build/index.html",
     heading: "Battery Level Indicator",
     text: "Built using React.js & CSS3",
   },
