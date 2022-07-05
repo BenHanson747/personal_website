@@ -28,7 +28,7 @@ function HeroImage() {
             className="home__blob-img"
             x="12"
             y="18"
-            xlinkHref={"/portfolio/build/assets/Ben_Hanson.png"}
+            xlinkHref={"/assets/Ben_Hanson.png"}
           />
         </g>
       </svg>
