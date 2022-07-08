@@ -105,6 +105,7 @@ button {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
+  padding-bottom: 1rem;
 }
 
 .section__title,
